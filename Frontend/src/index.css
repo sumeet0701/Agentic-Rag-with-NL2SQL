@@ -1,0 +1,148 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Colorful & Friendly Design System */
+
+@layer base {
+  :root {
+    --background: 240 20% 98%;
+    --foreground: 240 10% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 240 10% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 10% 15%;
+
+    --primary: 262 83% 58%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 187 92% 45%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 240 15% 92%;
+    --muted-foreground: 240 10% 40%;
+
+    --accent: 330 81% 60%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 240 15% 88%;
+    --input: 240 15% 88%;
+    --ring: 262 83% 58%;
+
+    --radius: 1rem;
+
+    /* Chat-specific tokens */
+    --chat-user: 262 83% 58%;
+    --chat-user-foreground: 0 0% 100%;
+    --chat-assistant: 187 92% 45%;
+    --chat-assistant-foreground: 0 0% 100%;
+    --chat-bubble: 0 0% 100%;
+    --chat-bubble-foreground: 240 10% 15%;
+
+    /* Toggle tokens */
+    --toggle-structured: 262 83% 58%;
+    --toggle-unstructured: 330 81% 60%;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 262 83% 58%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 240 15% 88%;
+    --sidebar-ring: 262 83% 58%;
+  }
+
+  .dark {
+    --background: 240 15% 10%;
+    --foreground: 0 0% 95%;
+
+    --card: 240 15% 13%;
+    --card-foreground: 0 0% 95%;
+
+    --popover: 240 15% 13%;
+    --popover-foreground: 0 0% 95%;
+
+    --primary: 262 83% 65%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 187 92% 50%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 240 15% 20%;
+    --muted-foreground: 240 10% 60%;
+
+    --accent: 330 81% 65%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 62.8% 50%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 240 15% 20%;
+    --input: 240 15% 20%;
+    --ring: 262 83% 65%;
+
+    --chat-user: 262 83% 65%;
+    --chat-user-foreground: 0 0% 100%;
+    --chat-assistant: 187 92% 50%;
+    --chat-assistant-foreground: 0 0% 100%;
+    --chat-bubble: 240 15% 18%;
+    --chat-bubble-foreground: 0 0% 95%;
+
+    --toggle-structured: 262 83% 65%;
+    --toggle-unstructured: 330 81% 65%;
+
+    --sidebar-background: 240 15% 10%;
+    --sidebar-foreground: 0 0% 95%;
+    --sidebar-primary: 262 83% 65%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 15% 15%;
+    --sidebar-accent-foreground: 0 0% 95%;
+    --sidebar-border: 240 15% 20%;
+    --sidebar-ring: 262 83% 65%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+@layer utilities {
+  .typing-dot {
+    animation: typing-bounce 1.4s infinite ease-in-out both;
+  }
+  
+  .typing-dot:nth-child(1) {
+    animation-delay: -0.32s;
+  }
+  
+  .typing-dot:nth-child(2) {
+    animation-delay: -0.16s;
+  }
+  
+  .typing-dot:nth-child(3) {
+    animation-delay: 0s;
+  }
+}
+
+@keyframes typing-bounce {
+  0%, 80%, 100% {
+    transform: scale(0.6);
+    opacity: 0.5;
+  }
+  40% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
