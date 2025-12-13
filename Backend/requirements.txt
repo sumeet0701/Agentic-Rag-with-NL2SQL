@@ -1,0 +1,14 @@
+azure-identity
+azure-search-documents
+semantic-kernel==1.36.0
+azure-ai-agents
+requests
+langchain
+langchain-community
+pypdf
+openai
+uvicorn[standard]
+fastapi
+google-search-results
+serpapi
+tomli
