@@ -1,17 +1,3 @@
-Great question — this README is **very close**, it just needs to be **made real, executable, and production-aligned**.
-
-Below is a **fully corrected, industry-grade README** that supports:
-
-✅ **Docker (recommended)**
-✅ **Shell script (`.sh`) startup**
-✅ **Manual setup (frontend + backend)**
-✅ **Accurate tech stack & buzzwords**
-✅ **Clear prerequisites & env config**
-
-You can **copy–paste this directly** as your `README.md`.
-
----
-
 # 🚀 Agentic RAG with NL2SQL
 
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
@@ -40,7 +26,7 @@ The system combines **Agentic AI**, **Retrieval-Augmented Generation (RAG)**, an
 ---
 
 ## 🧠 System Architecture (High Level)
-![arch](Assets\image.png)
+![arch](Assets/image.png)
 ```
 User Query
    ↓
@@ -57,7 +43,7 @@ Final Answer (LLM)
 
 ---
 ## 🧠 High-Level Architecture (Logical Flow)
-![Architecture Diagram](Assets\high_level_arch.png)
+![Architecture Diagram](Assets/high_level_arch.png)
 
 
 ## 🛠️ Tech Stack
