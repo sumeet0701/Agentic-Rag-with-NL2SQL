@@ -40,7 +40,7 @@ The system combines **Agentic AI**, **Retrieval-Augmented Generation (RAG)**, an
 ---
 
 ## 🧠 System Architecture (High Level)
-![arch](Assets\image.png)
+![arch](Assets/image.png)
 ```
 User Query
    ↓
